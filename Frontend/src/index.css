@@ -84,3 +84,27 @@ code {
 .nav-link {
   margin-left: 40px;
 }
+
+#supportHero {
+  background-color: rgba(56, 126, 209, 255);
+}
+
+#supportHero a,
+h2,
+ol {
+  color: white;
+}
+
+#supportWrapper input {
+  width: 80%;
+  padding: 15px;
+  border-radius: 7px;
+  border: none;
+}
+
+#supportWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 150px;
+  color: aliceblue;
+}
