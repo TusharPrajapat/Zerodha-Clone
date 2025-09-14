@@ -141,3 +141,47 @@
   overflow-y: auto;
   /* padding: 3% 2%; */
 }
+
+.Summary-container {
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+}
+
+.username {
+  flex-basis: 100%;
+}
+
+.username h6 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgb(83, 83, 83);
+  margin-bottom: 20px;
+}
+
+.divider {
+  border: none;
+  background: #d1d1d1;
+  height: 1px;
+  margin: 20px 0;
+  margin-bottom: 5%;
+}
+
+.data {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.first {
+  padding: 30px 100px;
+}
+
+.data .first .profit {
+  color: rgb(72, 194, 55);
+}
+
+.data .first small {
+  font-size: 0.8rem;
+  color: rgb(72, 194, 55);
+}
