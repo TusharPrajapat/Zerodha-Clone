@@ -2,9 +2,9 @@ import React from "react";
 
 function WatchList() {
   return (
-    <div>
-      <div>
-        <h1>Watchlist</h1>
+    <div className="watchlist-container">
+      <div className="search-container">
+        {/* <h1>Watchlist</h1> */}
         <input
           className="search"
           type="text"
