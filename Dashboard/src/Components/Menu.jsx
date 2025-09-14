@@ -13,6 +13,9 @@ function Menu() {
     setIsProfileDropDownOpen(!isProfileDropdownOpen);
   };
 
+  const menuClass = "menu";
+  const activeMenuClass = "menu selected";
+
   return (
     <div className="menu-container">
       <img src="logo.png" style={{ width: "30px", marginLeft: "10px" }} />
@@ -24,7 +27,11 @@ function Menu() {
               to={"/"}
               onClick={() => handleMenuClick(0)}
             >
-              Dashboard
+              <span
+                className={selectedMenu === 0 ? activeMenuClass : menuClass}
+              >
+                Dashboard
+              </span>
             </Link>
           </li>
           <li>
@@ -33,7 +40,11 @@ function Menu() {
               to={"/orders"}
               onClick={() => handleMenuClick(1)}
             >
-              Orders
+              <span
+                className={selectedMenu === 1 ? activeMenuClass : menuClass}
+              >
+                Orders
+              </span>
             </Link>
           </li>
           <li>
@@ -42,7 +53,11 @@ function Menu() {
               to={"/holdings"}
               onClick={() => handleMenuClick(2)}
             >
-              Holdings
+              <span
+                className={selectedMenu === 2 ? activeMenuClass : menuClass}
+              >
+                Holdings
+              </span>
             </Link>
           </li>
           <li>
@@ -52,7 +67,11 @@ function Menu() {
               to={"/positions"}
               onClick={() => handleMenuClick(3)}
             >
-              Positions
+              <span
+                className={selectedMenu === 3 ? activeMenuClass : menuClass}
+              >
+                Positions
+              </span>
             </Link>
           </li>
           <li>
@@ -62,7 +81,11 @@ function Menu() {
               to={"/funds"}
               onClick={() => handleMenuClick(4)}
             >
-              Funds
+              <span
+                className={selectedMenu === 4 ? activeMenuClass : menuClass}
+              >
+                Funds
+              </span>
             </Link>
           </li>
           <li>
@@ -72,7 +95,11 @@ function Menu() {
               to={"/apps"}
               onClick={() => handleMenuClick(5)}
             >
-              Apps
+              <span
+                className={selectedMenu === 5 ? activeMenuClass : menuClass}
+              >
+                Apps
+              </span>
             </Link>
           </li>
         </ul>

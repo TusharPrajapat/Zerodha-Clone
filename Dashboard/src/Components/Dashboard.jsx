@@ -15,7 +15,7 @@ function Dashboard() {
       <WatchList />
       {/* <h1>Dashboard</h1> */}
 
-      <div>
+      <div className="content">
         <Routes>
           <Route path="/" element={<Summary />} />
           <Route path="/orders" element={<Orders />} />
