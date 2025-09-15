@@ -142,6 +142,51 @@
   padding: 3% 2%;
 }
 
+/* Funds Compnent */
+/* .funds {
+  width: 100%;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.funds p {
+  font-size: 0.8rem;
+  color: rgb(179, 179, 179);
+  margin-right: 8px;
+}
+
+.funds .btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 2px;
+  color: #fff;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.btn-green {
+  background: #4caf50;
+}
+
+.btn-blue {
+  background: #4184f3;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 5%;
+}
+
+.col {
+  flex-basis: 48%;
+  text-align: left;
+} */
+
 /* Summary Component */
 
 .Summary-container {
@@ -253,14 +298,14 @@
   text-align: left;
 }
 
-.row {
+.holdings-container .row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 5%;
 }
 
-.col {
+.holdings-container .col {
   flex-basis: 33%;
 }
 
@@ -284,4 +329,96 @@
 
 .row .col:last-child h5 {
   color: rgb(72, 194, 55);
+}
+
+/* Funds */
+
+.funds {
+  width: 100%;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.funds p {
+  font-size: 0.8rem;
+  color: rgb(179, 179, 179);
+  margin-right: 8px;
+}
+
+.funds .btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 2px;
+  color: #fff;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.funds .btn-green {
+  background: #4caf50;
+}
+
+.funds .btn-blue {
+  background: #4184f3;
+}
+
+.funds-container .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 5%;
+}
+
+.funds-container .col {
+  flex-basis: 48%;
+  text-align: left;
+}
+
+.funds-container .table {
+  border: 1px solid #ddd;
+  padding: 5% 8%;
+}
+
+.funds-container .table .data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.funds-container .table .data > * {
+  margin-bottom: 5%;
+}
+
+.funds-container .table .data p:first-child {
+  font-size: 1rem;
+  color: rgb(151, 151, 151);
+}
+
+.funds-container .imp {
+  font-size: 1.5rem;
+  color: #313131;
+}
+
+.funds-container .colored {
+  color: #4184f3;
+}
+
+.funds-container .table hr {
+  border: none;
+  background: #d1d1d1;
+  height: 0.5px;
+  margin-bottom: 5%;
+}
+
+.funds-container .commodity {
+  padding: 2% 8%;
+  text-align: center;
+}
+
+.funds-container .commodity p {
+  margin-bottom: 10%;
+  color: #c9c9c9;
 }
