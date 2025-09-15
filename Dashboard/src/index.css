@@ -289,13 +289,25 @@
   text-align: right;
   padding: 15px 10px;
   color: rgb(145, 145, 145);
-  font-weight: 300;
-  font-size: 0.8rem;
+  font-weight: 400;
+  font-size: 0.9rem;
 }
 
 .order-table tr th:first-child,
 .order-table tr td:first-child {
   text-align: left;
+}
+
+.order-table tr td:last-child {
+  font-size: 0.6rem;
+}
+
+.order-table td {
+  padding: 10px 10px;
+  text-align: right;
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: rgb(73, 73, 73);
 }
 
 .holdings-container .row {
