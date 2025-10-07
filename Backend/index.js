@@ -14,7 +14,7 @@ const app = express();
 
 //Temp data store for Holdings
 // app.get("/addHoldings", async (req, res) => {
-//   let tempHolding = [
+//   let HoldingData = [
 //     {
 //       name: "BHARTIARTL",
 //       qty: 2,
@@ -126,7 +126,7 @@ const app = express();
 //     },
 //   ];
 
-//   tempHolding.forEach((item) => {
+//   HoldingData.forEach((item) => {
 //     let newHolding = new HoldingsModel({
 //       name: item.name,
 //       qty: item.qty,
@@ -143,7 +143,7 @@ const app = express();
 
 //Temp data for storing Positions
 // app.get("/addPositions", async (req, res) => {
-//   let tempPositions = [
+//   let PositionsData = [
 //     {
 //       product: "CNC",
 //       name: "EVEREADY",
@@ -166,7 +166,7 @@ const app = express();
 //     },
 //   ];
 
-//   tempPositions.forEach((item) => {
+//   PositionsData.forEach((item) => {
 //     let newPositions = new PositionsModel({
 //       product: item.product,
 //       name: item.name,
@@ -180,7 +180,6 @@ const app = express();
 
 //     newPositions.save();
 //   });
-
 //   res.send("Positions Saved!");
 // });
 
