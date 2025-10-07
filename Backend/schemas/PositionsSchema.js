@@ -11,4 +11,4 @@ const PositionsSchema = new Schema({
   isLoss: Boolean,
 });
 
-module.exports = { HoldingsSchema };
+module.exports = { PositionsSchema };
