@@ -3,6 +3,8 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const { holdings } = require("../Dashboard/src/data/data");
+const cors = require("cors");
+const bodyParser = require("body-parser");
 
 const { HoldingsModel } = require("./model/HoldingsModel");
 const { PositionsModel } = require("./model/PositionsModel");
@@ -11,6 +13,8 @@ const PORT = process.env.PORT || 3002;
 const url = process.env.MONGO_URL;
 
 const app = express();
+app.use(cors());
+app.use(bodyParser.json());
 
 //Temp data store for Holdings
 // app.get("/addHoldings", async (req, res) => {
@@ -182,6 +186,12 @@ const app = express();
 //   });
 //   res.send("Positions Saved!");
 // });
+
+//Fetching Holdings data from database
+app.get("/allHoldings", async (req, res) => {
+  let allHoldings = await HoldingsModel.find({});
+  res.json(allHoldings);
+});
 
 app.listen(PORT, () => {
   console.log("App Started!");
