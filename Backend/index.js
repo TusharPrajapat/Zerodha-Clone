@@ -193,6 +193,12 @@ app.get("/allHoldings", async (req, res) => {
   res.json(allHoldings);
 });
 
+//Fetching Positions data from database
+app.get("/allPositions", async (req, res) => {
+  let allPositions = await PositionsModel.find({});
+  res.json(allPositions);
+});
+
 app.listen(PORT, () => {
   console.log("App Started!");
   mongoose.connect(url);
